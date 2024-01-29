@@ -31,7 +31,7 @@ char *convert_int(char *buffer, va_list list, int *counter, int *buff_size)
 	num = _abs(num);
 	do {
 		if (digit == size - 1)
-			converted_num = realloc(converted_num, size += 64);
+			converted_num = _realloc(converted_num, size += 64);
 		converted_num[digit++] = num % 10;
 		num /= 10;
 		(*counter)++;
@@ -47,7 +47,7 @@ char *convert_int(char *buffer, va_list list, int *counter, int *buff_size)
 	if (is_negative)
 	{
 		if (digit == size - 1)
-			converted_num = realloc(converted_num, size += 64);
+			converted_num = _realloc(converted_num, size += 64);
 		converted_num[digit++] = '-';
 		(*counter)++;
 		check_buffer_fill(buffer, counter, buff_size);
