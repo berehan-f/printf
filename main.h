@@ -16,6 +16,7 @@ char *convert_string(char *buffer, va_list list, int *counter, int *buff_size);
 char *non_format(char *buffer, char *format, int *counter, int *buff_size);
 char *convert_char(char *buffer, va_list list, int *counter, int *buff_size);
 void check_buffer_fill(char *buffer, int *counter, int *buff_size);
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 int _printf(char *format, ...);
 void print_buffer(char *buffer, int counter);
 void error(void);
