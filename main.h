@@ -5,11 +5,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-<<<<<<< HEAD
 int _abs(int x, int *is_negative);
-=======
-int _abs(int, int *);
->>>>>>> 6e44277b3c7b1fdf23056206c152c0245ad45c15
 int _putchar(char c);
 char *_strcpy(char *dest, char *src);
 char *_strcat(char *dest, char *src);
