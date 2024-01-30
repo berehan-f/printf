@@ -11,6 +11,8 @@ char *convert_string(char *buffer, va_list list, int *counter, int *buff_size)
 {
 	char *str = va_arg(list, char *);
 
+	if (str == NULL)
+		exit(98);
 	while (*str)
 	{
 		buffer[(*counter)++] = *str++;
