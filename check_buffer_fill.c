@@ -9,7 +9,7 @@ void check_buffer_fill(char *buffer, int *counter, int *buff_size)
 {
 	if (*counter == *buff_size)
 	{
+		buffer = _realloc(buffer, *buff_size, (*buff_size) + 1024);
 		(*buff_size) += 1024;
-		buffer = _realloc(buffer, *buff_size);
 	}
 }
