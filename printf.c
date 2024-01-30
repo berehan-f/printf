@@ -15,6 +15,8 @@ int _printf(char *format, ...)
 
 	buffer[0] = 0;
 	va_start(list, format);
+	if (format == 0)
+		return (-1);
 
 	while (*format)
 	{
